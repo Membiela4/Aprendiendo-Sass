@@ -1,0 +1,42 @@
+$colorPrincipal : #F0FFFF;
+$colorFormulario :  green;
+$colorNeggro : black;
+
+@mixin centrar {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+@mixin bordes {
+    border-color:$colorNeggro ;
+    border: 3px solid;
+}
+
+.perfil {
+  
+    @include centrar();
+
+    h2 {
+        background-color: $colorFormulario;
+
+    }
+}
+
+html {
+    @include centrar();
+    background-color: $colorPrincipal;
+ }
+
+.modulos {
+    @include bordes();
+    @include centrar();
+    
+        h3 {
+            @include centrar();
+        }
+    
+ }
+ td {
+    @include bordes();
+ }
