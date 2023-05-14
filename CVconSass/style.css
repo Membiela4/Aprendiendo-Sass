@@ -1,0 +1,87 @@
+.perfil {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.perfil h2 {
+  background-color: green;
+  font-size: larger;
+}
+@media (max-width: 768px) {
+  .perfil h2 {
+    font-size: medium;
+  }
+}
+
+html {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0FFFF;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "perfil" "modulos";
+  grid-template-columns: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: small;
+  }
+}
+
+.modulos {
+  border-color: black;
+  border: 3px solid;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.modulos h3 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+td {
+  border-color: black;
+  border: 3px solid;
+}
+td:nth-child(1) {
+  background-color: #f7cac9;
+}
+td:nth-child(2) {
+  background-color: #6b5b95;
+}
+td:nth-child(3) {
+  background-color: #feb236;
+}
+td:nth-child(4) {
+  background-color: #d64161;
+}
+td:nth-child(5) {
+  background-color: #ff7b25;
+}
+td:nth-child(6) {
+  background-color: #2ec4b6;
+}
+td:nth-child(7) {
+  background-color: #e71d36;
+}
+
+@media (max-width: 408px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table td {
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
