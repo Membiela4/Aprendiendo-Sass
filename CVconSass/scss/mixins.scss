@@ -1,0 +1,25 @@
+@import "./variables";
+
+@mixin centrar {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+@mixin bordes {
+    border-color:$colorNegro ;
+    border: 3px solid;
+}
+
+@mixin center-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin center-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,0 +1,3 @@
+@function calcularAnchura($anchuraVista , $numColumnas) {
+    @return percentage($numColumnas / 12)
+}

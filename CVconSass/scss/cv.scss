@@ -1,0 +1,86 @@
+@import "./_variables";
+@import "./_funciones";
+@import "./estructuras_repetitivas";
+@import "./_temas";
+@import "./mixins";
+@import "./menu";
+
+
+@media (max-width: 408px) {
+
+    .perfil{
+        width: 100%;
+    }
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      td {
+        @each $color in $colores {
+            &:nth-child(#{index($colores, $color)}) {
+              background-color: $color;
+        }
+
+        display: inline-block;
+      }
+    }
+  }
+
+
+}
+
+.perfil {
+
+@include centrar();
+
+h2 {
+    background-color: $colorFormulario;
+    font-size: larger;
+
+    @media(max-width:768px) {
+        font-size: medium;
+    }
+
+}
+}
+
+html {
+@include centrar();
+background-color: $colorPrincipal;
+}
+
+
+body{
+display: grid;
+grid-template-areas:"perfil"
+                    "modulos";
+grid-template-columns: 100%;
+@include centrar();
+
+@media(max-width:768px) {
+    font-size: small;
+}
+
+
+}
+
+.modulos {
+@include bordes();
+@include centrar();
+
+
+    h3 {
+        @include centrar();
+    }
+
+}
+td {
+
+@include bordes();
+@each $color in $colores {
+    &:nth-child(#{index($colores, $color)}) {
+      background-color: $color;
+    }
+
+}
+}

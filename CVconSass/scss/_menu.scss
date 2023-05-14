@@ -1,0 +1,29 @@
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    z-index: 100;
+  }
+  
+  .sticky-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sticky-menu li {
+    margin: 0 10px;
+  }
+  
+  .sticky-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+  }
+  
+  .sticky-menu a:hover {
+    color: #666;
+  }
