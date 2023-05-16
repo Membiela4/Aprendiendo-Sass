@@ -1,0 +1,54 @@
+/// Variable para asignar un color de fondo a la pagina en modo claro.
+/// @type Color
+/// @default 10px
+$colorPrincipal-claro: #ffffff;
+/// Variable para asignar un color de fondo a la pagina en modo claro.
+/// @type Color
+/// @default 10px
+$colorSecundario-claro: #f2f2f2;
+/// Variable para asignar un color de texto a la pagina en modo claro.
+/// @type Color
+/// @default 10px
+$colorTexto-claro: #333333;
+
+/// Variable para asignar un color de fondo a la pagina en modo oscuro.
+/// @type Color
+/// @default 10px
+$colorPrincipal-oscuro: #222222;
+/// Variable para asignar un color de fondo a la pagina en modo oscuro.
+/// @type Color
+/// @default 10px
+$colorSecundario-oscuro: #333333;
+/// Variable para asignar un color de texto a la pagina en modo oscuro.
+/// @type Color
+/// @default 10px
+$colorTexto-oscuro: #ffffff;
+
+/// Variable para asignar un color de texto a el titulo de la seccion experiencia.
+/// @type Color
+/// @default 10px
+$colorExperience : rgb(230, 71, 71);
+/// Variable para asignar un color de texto a el titulo de la seccion educacion.
+/// @type Color
+/// @default 
+$colorEducation : rgb(8, 207, 8);
+/// Variable para asignar un color de texto a el titulo de la seccion projects.
+/// @type Color
+/// @default 10px
+$colorProjects:rgba(255, 176, 30, 0.913);
+/// Variable para asignar un color de texto a el titulo de la seccion skills.
+/// @type Color
+/// @default 10px
+$colorSkills: rgb(105, 2, 247);
+
+$modo: claro; 
+
+@if $modo == claro {
+  $colorPrincipal: $colorPrincipal-claro;
+  $colorSecundario: $colorSecundario-claro;
+  $colorTexto: $colorTexto-claro;
+} @else if $modo == oscuro {
+  $colorPrincipal: $colorPrincipal-oscuro;
+  $colorSecundario: $colorSecundario-oscuro;
+  $colorTexto: $colorTexto-oscuro;
+}

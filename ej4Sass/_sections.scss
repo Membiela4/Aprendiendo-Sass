@@ -1,0 +1,81 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    
+    .header {
+      margin-bottom: 20px;
+      
+      .full-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .contact-info {
+        margin-bottom: 10px;
+      }
+      
+      .separator {
+        margin: 0 5px;
+      }
+      
+      .about {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  .section {
+    
+    &__title {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 10px;
+      
+      &-1 {
+        color: $colorExperience;
+        border-color: $colorTexto-claro;
+      }
+      
+      &-2 {
+        color: $colorEducation;
+      }
+      
+      &-3 {
+        color: $colorProjects;
+      }
+      
+      &-4 {
+        color: $colorSkills;
+        border-color: $colorTexto-claro;
+      }
+    }
+    
+    &__list {
+      border-top: solid 2px;
+    }
+    
+    &__list-item {
+      display: flex;
+      margin-bottom: 10px;
+
+      .name {
+        display: inline;
+        font: bold;
+      }
+      
+      .left {
+        flex: 50%;
+      }
+      
+      .right {
+        flex: 50%;
+      }
+    }
+
+    .skills_item {
+        border-top: solid 2px;
+    }
+  }
+  
+  

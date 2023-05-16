@@ -1,0 +1,83 @@
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+.container .header {
+  margin-bottom: 20px;
+}
+.container .header .full-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container .header .contact-info {
+  margin-bottom: 10px;
+}
+.container .header .separator {
+  margin: 0 5px;
+}
+.container .header .about {
+  margin-bottom: 20px;
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.section__title-1 {
+  color: rgb(230, 71, 71);
+  border-color: #333333;
+}
+.section__title-2 {
+  color: rgb(8, 207, 8);
+}
+.section__title-3 {
+  color: rgba(255, 176, 30, 0.913);
+}
+.section__title-4 {
+  color: rgb(105, 2, 247);
+  border-color: #333333;
+}
+.section__list {
+  border-top: solid 2px;
+}
+.section__list-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.section__list-item .name {
+  display: inline;
+  font: bold;
+}
+.section__list-item .left {
+  flex: 50%;
+}
+.section__list-item .right {
+  flex: 50%;
+}
+.section .skills_item {
+  border-top: solid 2px;
+}
+
+.section-title-1 {
+  color: rgb(230, 71, 71) rgb(230, 71, 71);
+}
+
+.section-title-2 {
+  color: rgb(8, 207, 8) rgb(8, 207, 8);
+}
+
+.section-title-3 {
+  color: rgba(255, 176, 30, 0.913) rgba(255, 176, 30, 0.913);
+}
+
+.section-title-4 {
+  color: rgb(105, 2, 247) rgb(105, 2, 247);
+}
+
+.contact-info .separator {
+  border: solid 1px;
+}
+
+/*# sourceMappingURL=style.css.map */

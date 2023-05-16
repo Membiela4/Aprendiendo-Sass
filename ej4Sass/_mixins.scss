@@ -1,0 +1,20 @@
+  /// Mixin para resetear el margen de los textos y titulos
+/// @type Mixin
+/// @default
+@mixin reset {
+    margin: 0;
+  
+    p, h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+  }
+  /// Mixin para centrar un elemento al que se le pasa un margen superior, inferior y el tamaño del elemento.
+/// @type Mixin
+/// @default
+  @mixin centrado($margen-superior, $margen-inferior, $tamano) {
+    margin-top: $margen-superior;
+    margin-bottom: $margen-inferior;
+    width: $tamano;
+    margin-left: auto;
+    margin-right: auto;
+  }

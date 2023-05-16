@@ -1,0 +1,21 @@
+@use "sass:list";
+@use "vars";
+@import "./vars";
+
+  ///lista que contiene los colores de los titulos
+/// @type Array
+/// @default
+$colors: (
+  $colorExperience: rgb(230, 71, 71),
+  $colorEducation: rgb(8, 207, 8),
+  $colorProjects: rgba(255, 176, 30, 0.913),
+  $colorSkills: rgb(105, 2, 247)
+);
+
+/// funcion para asignar el color, recibe el indice y le asgina el color del array declarado anteriormente 
+/// @type Funcion
+/// @default
+@function colorSectionTitle($index) {
+
+  @return list.nth($colors, $index);
+}
