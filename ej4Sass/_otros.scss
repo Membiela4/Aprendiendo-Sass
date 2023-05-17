@@ -1,13 +1,12 @@
-
 @use "vars";
-@use "./functions";
+@use "functions";
 
 /// Bucle for que asigna un color a cada uno de los titulos a traves de la funcion colorSectionTitle()
 /// @type bucle
 /// @default
 @for $i from 1 through 4 {
   .section-title-#{$i} {
-    color: functions.colorSectionTitle($i);
+    color: colorSectionTitle($i);
   }
 }
 
@@ -15,4 +14,11 @@
     .separator{
         border: solid 1px;
     }
+}
+
+.first-name {
+  font-size: $titulo;
+}
+.last-name {
+  font-size: $titulo;
 }

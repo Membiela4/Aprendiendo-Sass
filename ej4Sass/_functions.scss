@@ -1,8 +1,8 @@
-@use "sass:list";
+@use "sass:list" as list;
 @use "vars";
 @import "./vars";
 
-  ///lista que contiene los colores de los titulos
+///lista que contiene los colores de los titulos
 /// @type Array
 /// @default
 $colors: (
@@ -14,8 +14,9 @@ $colors: (
 
 /// funcion para asignar el color, recibe el indice y le asgina el color del array declarado anteriormente 
 /// @type Funcion
+/// @param $index el indice de color que se le aplicara a el titulo
 /// @default
 @function colorSectionTitle($index) {
-
+ 
   @return list.nth($colors, $index);
 }

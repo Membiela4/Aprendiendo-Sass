@@ -41,6 +41,12 @@ $colorProjects:rgba(255, 176, 30, 0.913);
 /// @default 10px
 $colorSkills: rgb(105, 2, 247);
 
+
+///Variable para setear tamaños grandes a titulos
+/// @type fontSize
+/// @default larger
+$titulo: larger;
+
 $modo: claro; 
 
 @if $modo == claro {
